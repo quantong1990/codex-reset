@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="ORK5YS83vEWjHj0g1AylXz">
+<head data-page-node-id="pyPPYxZPSGwsT3Ui2EzuSS">
+  <meta charset="UTF-8" data-page-node-id="OihSRn8CXYPRtG7iVDHIqa" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="LKasbStSGG9AMfH151mT0o" />
+  <title>Quota Cycle · 最佳限额刷新周期计算器</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" data-page-node-id="v7H88T0ejXuQ5J3dfYGDXg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-page-node-id="hHvI90nfhduOyPzfnMdP2C" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" data-page-node-id="XgEJqjF7CHdlqUTeLmSFKz"
+  />
+  <link rel="stylesheet" href="style.css?v=20260907-3" data-page-node-id="SEc2WGgKp3Bwvdu6ot6eet" />
+</head>
+<body data-page-node-id="BvyzsV65CpfyDC8UYAb0Th">
+  <div class="grain" data-page-node-id="ndyeUQfd2URQWfB5IMSrtS"></div>
+
+  <main class="page" data-page-node-id="HTT1PEt8KRGBDe85oojVTE">
+    <header class="header" data-page-node-id="Tkg4xEfz4nGVY9ukfUhsQ5">
+      <div class="brand" data-page-node-id="AtdZFcl8xuLlpfodVGFvVi">
+        <span class="brand-mark" data-page-node-id="Esygu7PEceBnbBb2M5Fzlo">Q</span>
+        <span class="brand-name" data-page-node-id="zzXHAUhEr172gTuFDp31JH">Quota <em data-page-node-id="DWtl73b6OM00lG2NBip33c">·</em> Cycle</span>
+      </div>
+      <span class="brand-tag" data-page-node-id="MjdcxCg3pQKBqHP282MXuT">限额刷新周期 · 计算器</span>
+    </header>
+
+    <section class="hero" data-page-node-id="vX86EMsW5bG9CB4jvbkXts">
+      <span class="kicker" data-page-node-id="2jGPFe0ZUL8Q1YnZcSX5Ta">Step 01 · 输入你的黄金时间</span>
+      <h1 data-page-node-id="baSXfKh5YvSILtar1AYQMZ">找到你的 <em data-page-node-id="8tFkxrF5wOOff0h6pCPQaU">最佳 coding 节奏</em>。</h1>
+      <p class="sub" data-page-node-id="5BOoixT0kxfmdymh0q8lAC">
+        输入你一天中开启工作的时间，我们据此把 24 小时切分成 五个流畅衔接的 5 小时窗口，
+        帮你锁定最贴合自己工作的5小时限额刷新节点。
+      </p>
+    </section>
+
+    <section class="control" data-page-node-id="XeVIBbAlUQThXHk3nV9jgV">
+      <div class="control-head" data-page-node-id="jaUCXH0ONQfK5XIWvSem1B">
+        <h2 class="control-title" data-page-node-id="HLR3SwJAHvHFx8i179Z30y">输入你开始工作的时间</h2>
+      </div>
+
+      <div class="control-body" data-page-node-id="ControlBody01"><div class="time-row" data-page-node-id="R6HOBcrrWWQdOga81BxD0B">
+        <div class="time-field" aria-label="小时" data-page-node-id="KomGjDIx7qmWzwvhLeEghI">
+          <button type="button" class="field-btn field-btn-up" data-target="hour" data-delta="1" aria-label="增加小时" data-page-node-id="UdMazRxrB8yeXHqBZ4qtzr">+</button>
+          <div class="field-body" data-page-node-id="XyLXpWPGDAodpRAZE5cBuz">
+            <input type="number" id="hour" min="0" max="23" value="9" inputmode="numeric" data-page-node-id="Sl4kdO3bP9U2aTXw2zpDMm" />
+            <span class="field-suffix" data-page-node-id="V92WGxP0NNLEi3CLBlXRW5">时</span>
+          </div>
+          <button type="button" class="field-btn field-btn-down" data-target="hour" data-delta="-1" aria-label="减少小时" data-page-node-id="jeDHpTAtdNXENSI2qqJwoV">−</button>
+        </div>
+
+        <span class="time-sep" data-page-node-id="d4cVK6SIjfHUxwlyJs7ye5">:</span>
+
+        <div class="time-field" aria-label="分钟" data-page-node-id="8zomuxHZUvikXUxcWEc531">
+          <button type="button" class="field-btn field-btn-up" data-target="minute" data-delta="5" aria-label="增加 5 分钟" data-page-node-id="F0kdi17C3wF3zy2sdDLYyy">+</button>
+          <div class="field-body" data-page-node-id="XNSENIw1GRV8EHrOqlxGPd">
+            <input type="number" id="minute" min="0" max="59" step="5" value="00" inputmode="numeric" data-page-node-id="CzdzOCaUeEgEWEWCgWXBZl" />
+            <span class="field-suffix" data-page-node-id="azZr9BQmuFS2bAJ2hLxogx">分</span>
+          </div>
+          <button type="button" class="field-btn field-btn-down" data-target="minute" data-delta="-5" aria-label="减少 5 分钟" data-page-node-id="eKMwpfBsMKkdIRKqxNphgS">−</button>
+        </div>
+
+        <button type="button" class="now-btn" id="now-btn" aria-label="使用当前时间" data-page-node-id="YFBLuD2Xp48B8qXyRH7D1i">
+          <span class="now-dot" data-page-node-id="URnogRzBxRRUxo3IpoJKwH"></span>
+          <span data-page-node-id="LuuFKhqoWJSA5ajCiuZKhB">使用当前时间</span>
+        </button>
+      </div>
+      <div class="options-row" data-page-node-id="OptRowEarly01">
+        <div class="toggle-group" data-page-node-id="ToggleGroupEarly01">
+          <label class="toggle" data-page-node-id="OptToggleEarly01">
+            <input type="checkbox" id="early-toggle" data-page-node-id="OptEarlyChk01" />
+            <span class="toggle-track" data-page-node-id="OptEarlyTrack01"><span class="toggle-thumb" data-page-node-id="OptEarlyThumb01"></span></span>
+            <span class="toggle-label" data-page-node-id="OptEarlyLbl01">休息模式</span>
+          </label>
+          <span class="rest-icon" tabindex="0" role="button" aria-label="休息模式说明" data-page-node-id="OptEarlyTip01">!<span class="rest-tip tip-wide">提前2小时激活Agent，前2小时不工作，后3小时工作输出，将5小时限额压缩到3小时，可以让你在更短的时间里享受更多的token，并更快地到达重置时间点，适合集中火力输出的工作流</span></span>
+        </div>
+        <label class="toggle" data-page-node-id="OptToggleIndep01">
+          <input type="checkbox" id="independent-toggle" data-page-node-id="OptIndepChk01" />
+          <span class="toggle-track" data-page-node-id="OptIndepTrack01"><span class="toggle-thumb" data-page-node-id="OptIndepThumb01"></span></span>
+          <span class="toggle-label" data-page-node-id="OptIndepLbl01">断开衔接</span>
+        </label>
+        <div class="duration-control" data-page-node-id="DurationCtrl01">
+          <span class="duration-label" data-page-node-id="DurationLabel01">限额时长</span>
+          <button type="button" class="dur-btn" data-target="duration" data-delta="-1" aria-label="减少小时" data-page-node-id="DurationBtnDown01">−</button>
+          <input type="number" id="duration" min="2" max="12" value="5" inputmode="numeric" data-page-node-id="DurationInput01" />
+          <button type="button" class="dur-btn" data-target="duration" data-delta="1" aria-label="增加小时" data-page-node-id="DurationBtnUp01">+</button>
+          <span class="dur-suffix" data-page-node-id="DurationSuffix01">h</span>
+        </div>
+        <div class="duration-control" data-page-node-id="StaggerCtrl01">
+          <span class="duration-label" data-page-node-id="StaggerLabel01">消差延时</span>
+          <button type="button" class="dur-btn" data-target="stagger" data-delta="-1" aria-label="减少消差延时" data-page-node-id="StaggerBtnDown01">−</button>
+          <input type="number" id="stagger" min="0" max="30" value="2" inputmode="numeric" data-page-node-id="StaggerInput01" />
+          <button type="button" class="dur-btn" data-target="stagger" data-delta="1" aria-label="增加消差延时" data-page-node-id="StaggerBtnUp01">+</button>
+          <span class="dur-suffix" data-page-node-id="StaggerSuffix01">min</span>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="clocks" id="clocks" aria-live="polite" data-page-node-id="YXSWKLFxfHEFxlWOGhuEzv"></section>
+
+    <section class="legend" data-page-node-id="LegendSection01">
+      <div class="legend-item" data-page-node-id="LegendItem01">
+        <span class="legend-dot legend-dot-start" data-page-node-id="LegendDot01"></span>
+        <span data-page-node-id="LegendLabel01">激活时间</span>
+      </div>
+      <div class="legend-item" data-page-node-id="LegendItem02">
+        <span class="legend-dot legend-dot-end" data-page-node-id="LegendDot02"></span>
+        <span data-page-node-id="LegendLabel02">结束时间</span>
+      </div>
+      <div class="legend-item" data-page-node-id="LegendItem03">
+        <span class="legend-dot legend-dot-rest" data-page-node-id="LegendDot03"></span>
+        <span data-page-node-id="LegendLabel03">休息分隔</span>
+      </div>
+    </section>
+
+    <section class="prompt-section" data-page-node-id="PromptSection01">
+      <div class="prompt-head" data-page-node-id="PromptHead01">
+        <h2 class="prompt-title" data-page-node-id="PromptTitle01">激活提示词</h2>
+      </div>
+      <div class="prompt-body" data-page-node-id="PromptBody01">
+        <textarea id="prompt-text" rows="3" spellcheck="false" aria-label="激活提示词" data-page-node-id="PromptText01"></textarea>
+        <button type="button" id="copy-btn" class="copy-btn" aria-label="复制提示词到剪贴板" data-page-node-id="CopyBtn01">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="12" height="12" rx="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span data-copy-label data-page-node-id="CopyBtnLabel01">一键复制</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="footnote" data-page-node-id="EeQCpPoSbcM1UyZDjEdfY7">
+      <span class="fn-mark" data-page-node-id="RdkzouavEiEi21FHh8clI7">↳</span>
+      <p data-page-node-id="5DVlc8fBS0kUsDQLqFnW47">
+        每一段代表一个「限额窗口」，依次衔接覆盖完整的 <em data-page-node-id="9GIZ4oAkN5UJ0XhzAe1zug">24 小时循环</em>。
+        限额时长可在上方调整；窗口数不足 6 个时会循环重复，超过 6 个则自动换行。指针末端的胶囊显示实际的 24 小时制时间。
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js?v=20260907-3" defer></script>
+</body>
+</html>
