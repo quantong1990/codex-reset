@@ -2,6 +2,8 @@
 
 > 📘 中文版 / Chinese version: [README.md](README.md)
 
+> ⭐ **Like this project?** Drop a [Star on GitHub](https://github.com/quantong1990/quota-cycle) to support it and help more people find it.
+
 > Enter the time you start work each day, and Quota Cycle computes the best refresh moments for every daily "quota window", then generates an automation prompt you can hand straight to an AI Agent.
 
 ![Quota Cycle page preview](preview.png)
@@ -23,10 +25,12 @@ Subscriptions for Agents like Codex and Claude Code are metered by **rolling 5-h
 > Subscriptions for Agents like Codex and Claude Code are metered by rolling 5-hour windows — the window starts counting from your first message, not from when you sit down to work. Nobody wants to burn the quota in three hours of work and then be forced to idly wait two hours for the reset. The quota-activation routine below is exactly for you:
 
 1. **You usually start work at 9.** The Agent automatically sends its first message at 7:00 to activate the window (7:00–12:00). You work 9 to 12 then take lunch — burning a full 5-hour quota within just 3 hours of actual work.
-2. **12:00–14:00, lunch break.** The Agent automatically sends its second message at 12:02 to activate the window (12:02–17:02). The 2-minute delay guards against network jitter breaking the activation. You work 14:00 to 17:00, again burning the full 5-hour quota in 3 hours.
-3. **17:00–19:00, time to leave for dinner.** The Agent automatically sends its third message at 17:04 to activate the window (17:04–22:04). Whether you head home or work late into the evening, you have a fresh 5-hour window to use freely.
-4. **22:00, back home and washed up.** The Agent automatically sends its fourth message at 22:06 to activate the window (22:06–03:06). If you still have things to handle or want to use AI for something, you get yet another fresh 5-hour window.
+2. **12:00–14:00, lunch break.** The Agent automatically sends its second message at 12:00 to activate the window (12:00–17:00). You work 14:00 to 17:00, again burning the full 5-hour quota in 3 hours.
+3. **17:00–19:00, time to leave for dinner.** The Agent automatically sends its third message at 17:00 to activate the window (17:00–22:00). Whether you head home or work late into the evening, you have a fresh 5-hour window to use freely.
+4. **22:00, back home and washed up.** The Agent automatically sends its fourth message at 22:00 to activate the window (22:00–03:00). If you still have things to handle or want to use AI for something, you get yet another fresh 5-hour window.
 5. **Late at night you're already asleep.** The Agent waits silently and does not activate randomly — until the next day at 7:00, when it's another day with a full quota!
+
+* To guard against network jitter breaking the activation, each activation time in the prompt is shifted back by 2 minutes, i.e. 【07:00】【12:02】【17:04】【22:06】.
 
 > This rhythm maps to the tool settings: start time **7:00**, quota duration **5 hours**, stagger **2 minutes** — which generates the `【07:00】【12:02】【17:04】【22:06】` schedule above.
 

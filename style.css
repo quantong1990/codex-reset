@@ -902,3 +902,33 @@ input:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+
+/* ====================================================
+   GITHUB 链接（页面右上角）
+   ==================================================== */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: var(--bg-card);
+  background: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+
+.github-link:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+}
+
+.github-link .github-icon { display: block; }
