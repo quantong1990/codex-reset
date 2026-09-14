@@ -4,6 +4,10 @@
 >
 > Enter the time you start work each day, and Quota Cycle computes the best refresh moments for every daily "quota window", then generates an automation prompt you can hand straight to an AI Agent.
 
+![Quota Cycle 页面预览 / Page preview](preview.png)
+
+*页面效果 / Page preview — 默认 09:00 起点，把 24 小时切分为五个衔接的 5 小时限额窗口，并实时生成可一键复制的激活提示词。*
+
 ---
 
 ## 背景 | Background
