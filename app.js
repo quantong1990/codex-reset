@@ -468,8 +468,7 @@ function activationTimes() {
 
 function buildPromptText() {
   const times = activationTimes().map(t => `【${formatMinShort(t)}】`).join('');
-  return `设置定时任务，每天在以下固定时间点${times}，向我打一声招呼，激活当前的${state.slotHours}小时限额窗口。` +
-    `以上自动化全部保持每天启用，对话后台静默执行，不主动打开新的可见对话窗口，仅在失败或需要处理时补充说明。`;
+  return `设置定时任务，每天在以下固定时间（以我电脑的时区为准）：${times}，向我发送一句话："窗口已激活"。`;
 }
 
 /* 用户手动改过文案后置为 dirty：之后时钟变化只原地替换【HH:MM】时间令牌，

@@ -51,7 +51,7 @@ Subscriptions for Agents like Codex and Claude Code are metered by **rolling 5-h
 With default 09:00 / 5h / stagger 2 min:
 
 ```
-设置定时任务，每天在以下固定时间点【09:00】【14:02】【19:04】【00:06】，向我打一声招呼，激活当前的5小时限额窗口。以上自动化全部保持每天启用，对话后台静默执行，不主动打开新的可见对话窗口，仅在失败或需要处理时补充说明。
+设置定时任务，每天在以下固定时间（以我电脑的时区为准）：【09:00】【14:02】【19:04】【00:06】，向我发送一句话："窗口已激活"。
 ```
 
 Set the stagger to 5 minutes and it becomes `【09:00】【14:05】【19:10】【00:15】` (see the 7:00 variant in the Use Case above).
