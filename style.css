@@ -87,7 +87,7 @@ body {
   display: grid; place-items: center;
   font-family: var(--serif);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
   font-style: italic;
   letter-spacing: -0.02em;
 }
@@ -157,6 +157,9 @@ body {
   color: var(--ink-2);
   max-width: 640px;
   line-height: 1.55;
+  text-wrap: pretty;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 
 .hero .sub strong {
@@ -841,6 +844,10 @@ body.dragging * {
   font-family: var(--serif);
   font-style: italic;
   border-top: 1px solid var(--border);
+  text-wrap: pretty;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
   padding-top: 26px;
   display: flex;
   align-items: flex-start;
