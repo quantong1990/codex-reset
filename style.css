@@ -117,7 +117,6 @@ body {
    HERO
    ==================================================== */
 .hero {
-  max-width: 780px;
   margin-bottom: 20px;
 }
 
@@ -154,8 +153,7 @@ body {
 .hero .sub {
   font-size: 13.5px;
   color: var(--ink-2);
-  max-width: 640px;
-  line-height: 1.55;
+  line-height: 1.7;
   text-wrap: pretty;
   word-break: keep-all;
   overflow-wrap: anywhere;
@@ -837,7 +835,6 @@ body.dragging * {
    FOOTNOTE
    ==================================================== */
 .footnote {
-  max-width: 760px;
   font-size: 15px;
   color: var(--ink-2);
   font-family: var(--serif);
@@ -846,13 +843,14 @@ body.dragging * {
   text-wrap: pretty;
   word-break: keep-all;
   overflow-wrap: anywhere;
-}
   padding-top: 26px;
   display: flex;
   align-items: flex-start;
   gap: 14px;
   line-height: 1.7;
 }
+
+.footnote p { flex: 1; }
 
 .footnote em {
   color: var(--accent-strong);
@@ -861,12 +859,9 @@ body.dragging * {
 }
 
 .fn-mark {
-  font-size: 20px;
   color: var(--accent-strong);
-  font-style: normal;
-  font-family: var(--serif);
   flex-shrink: 0;
-  line-height: 1;
+  align-self: flex-start;
 }
 
 /* ====================================================
