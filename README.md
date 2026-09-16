@@ -1,12 +1,12 @@
-# Quota Cycle · 限额刷新周期计算器
+# codex-reset · 限额刷新周期计算器
 
 > 📘 英文版 / English version: [README_EN.md](README_EN.md)
 
-> ⭐ **喜欢这个项目？** 去 [GitHub 点个 Star](https://github.com/quantong1990/quota-cycle) 支持一下，也能帮更多人发现它。
+> ⭐ **喜欢这个项目？** 去 [GitHub 点个 Star](https://github.com/quantong1990/codex-reset) 支持一下，也能帮更多人发现它。
 
 > 输入你一天开启工作的时间，自动算出一天里每个「限额窗口」的最佳刷新时间点，并生成可直接交给 AI Agent 执行的自动化提示词。
 
-![Quota Cycle 页面预览](preview.png)
+![codex-reset 页面预览](preview.png)
 
 *页面效果 — 默认 09:00 起点，把 24 小时切分为五个衔接的 5 小时限额窗口，并实时生成可一键复制的激活提示词。*
 
@@ -16,7 +16,7 @@
 
 Codex、Claude Code 等 Agent 的订阅都按**滚动 5 小时窗口**计量：窗口从你的第一条消息开始计时，而不是从你坐下干活开始。于是常出现尴尬局面——工作三小时就用完额度，却只能干等两小时等窗口重置。
 
-**Quota Cycle** 把这个问题产品化：以 24 小时表盘为单位，把一天切成若干衔接的限额窗口，并输出一段**激活提示词**——交给后台 Agent，让它每天在固定时间点打招呼、激活新的限额窗口即可。
+**codex-reset** 把这个问题产品化：以 24 小时表盘为单位，把一天切成若干衔接的限额窗口，并输出一段**激活提示词**——交给后台 Agent，让它每天在固定时间点打招呼、激活新的限额窗口即可。
 
 ---
 
@@ -74,7 +74,7 @@ Codex、Claude Code 等 Agent 的订阅都按**滚动 5 小时窗口**计量：�
 - 直接双击 `index.html` 用浏览器打开即可；
 - 或起一个本地静态服务器：
   ```bash
-  cd quota-cycle
+  cd codex-reset
   python3 -m http.server 8765
   # 浏览器访问 http://localhost:8765/
   ```
@@ -101,7 +101,7 @@ node test.js
 ## 项目结构
 
 ```
-quota-cycle/
+codex-reset/
 ├── index.html    # 页面结构（选项区 / 时钟容器 / 提示词区）
 ├── style.css     # 暖米色视觉风格与布局
 ├── app.js        # 状态、SVG 时钟渲染、拖动、提示词生成逻辑
@@ -122,8 +122,8 @@ quota-cycle/
 
 ## 在线演示
 
-- 实时预览：https://quantong1990.github.io/quota-cycle/
-- 源码仓库：https://github.com/quantong1990/quota-cycle
+- 实时预览：https://quantong1990.github.io/codex-reset/
+- 源码仓库：https://github.com/quantong1990/codex-reset
 
 ---
 

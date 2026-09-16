@@ -1,12 +1,12 @@
-# Quota Cycle · Quota Refresh Cycle Calculator
+# codex-reset · Quota Refresh Cycle Calculator
 
 > 📘 中文版 / Chinese version: [README.md](README.md)
 
-> ⭐ **Like this project?** Drop a [Star on GitHub](https://github.com/quantong1990/quota-cycle) to support it and help more people find it.
+> ⭐ **Like this project?** Drop a [Star on GitHub](https://github.com/quantong1990/codex-reset) to support it and help more people find it.
 
-> Enter the time you start work each day, and Quota Cycle computes the best refresh moments for every daily "quota window", then generates an automation prompt you can hand straight to an AI Agent.
+> Enter the time you start work each day, and codex-reset computes the best refresh moments for every daily "quota window", then generates an automation prompt you can hand straight to an AI Agent.
 
-![Quota Cycle page preview](preview.png)
+![codex-reset page preview](preview.png)
 
 *Page preview — with the default 09:00 start, the 24 hours are split into five consecutive 5-hour quota windows, and a copy-ready activation prompt is generated live.*
 
@@ -16,7 +16,7 @@
 
 Subscriptions for Agents like Codex and Claude Code are metered by **rolling 5-hour windows**: the window starts counting from your first message, not from when you actually sit down to work. The awkward result is common — you burn through the quota in three hours of work, then are forced to idle for two hours waiting for the window to reset.
 
-**Quota Cycle** turns this into a product: it uses a 24-hour dial to split the day into consecutive quota windows, then outputs an **activation prompt** — hand it to a background Agent, and it will greet you and trigger a fresh quota window at fixed times every day.
+**codex-reset** turns this into a product: it uses a 24-hour dial to split the day into consecutive quota windows, then outputs an **activation prompt** — hand it to a background Agent, and it will greet you and trigger a fresh quota window at fixed times every day.
 
 ---
 
@@ -74,7 +74,7 @@ Zero-dependency, no-build static page. **Either works:**
 - Just double-click `index.html` to open it in a browser;
 - Or run a local static server:
   ```bash
-  cd quota-cycle
+  cd codex-reset
   python3 -m http.server 8765
   # Open http://localhost:8765/ in your browser
   ```
@@ -101,7 +101,7 @@ A Node assertion suite covers window splitting, return segments, cycle repeats, 
 ## Project Structure
 
 ```
-quota-cycle/
+codex-reset/
 ├── index.html    # page structure (options / clocks / prompt)
 ├── style.css     # warm visual theme and layout
 ├── app.js        # state, SVG clock rendering, dragging, prompt logic
@@ -122,8 +122,8 @@ Directory layout:
 
 ## Live Demo
 
-- Live preview: https://quantong1990.github.io/quota-cycle/
-- Source: https://github.com/quantong1990/quota-cycle
+- Live preview: https://quantong1990.github.io/codex-reset/
+- Source: https://github.com/quantong1990/codex-reset
 
 ---
 
